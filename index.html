@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Practice</title>
+</head>
+<style>
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        border: 3px solid coral;
+        justify-content: space-between;
+    }
+
+    .row div {
+        padding: 10px;
+        margin: 10px;
+        background: aqua;
+        flex-basis: 200px;
+
+    }
+
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-mobile {
+        display: none;
+    }
+
+    /*Add your media queries CSS below here */
+
+    
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                Column 1
+            </div>
+            <div class="col-2">
+                Column 2
+            </div>
+            <div class="col-1">
+                Column 3
+            </div>
+        </div>
+
+        <img src="./random-image.png" alt="Responsive Image" class="image-full">
+        <img src="./stock-image.png" alt="Responsive Image" class="image-mobile">
+
+    </div>
+
+</body>
+
+</html>
